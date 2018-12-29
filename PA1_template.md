@@ -145,4 +145,4 @@ ggplot(dfDayTypeAvg, aes(interval, steps)) + geom_line() + facet_grid(daytype ~ 
     xlab("5-minute interval") + ylab("Number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![](PA1_template_files/figure-html/CompareDaytype-1.png)<!-- -->
