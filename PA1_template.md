@@ -90,6 +90,16 @@ p + geom_line()+xlab("Interval")+ylab("Average Number of Steps")+ggtitle("Averag
 ```
 
 ![](PA1_template_files/figure-html/actpattern-1.png)<!-- -->
+The 5-minute interval that, on average, contains the maximum number of steps
+
+```r
+dfAct2[which.max(dfAct2$Avg), ]
+```
+
+```
+##     interval      Avg
+## 104      835 206.1698
+```
 
 ## Imputing missing values
 
