@@ -66,6 +66,10 @@ dfAct2 <- ddply(dfAct[!is.na(dfAct$steps),], .(interval), summarize, Avg = mean(
 p <- ggplot(dfAct2, aes(x=interval, y=Avg), xlab = "Interval", ylab="Average Number of Steps")
 p + geom_line()+xlab("Interval")+ylab("Average Number of Steps")+ggtitle("Average Number of Steps per Interval")
 ```
+The 5-minute interval that, on average, contains the maximum number of steps
+```{r maxsteps, echo=TRUE}
+dfAct2[which.max(dfAct2$Avg), ]
+```
 
 ## Imputing missing values
 ```{r missing, echo=TRUE}
